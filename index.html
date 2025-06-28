@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Форма регистрации</h2>
+    <form id="registrationForm" novalidate>
+      <label for="fio">ФИО (только кириллица и пробелы):</label>
+      <input type="text" id="fio" name="fio">
+      <div class="error" id="errorFio"></div>
+
+      <label for="birth">Дата рождения (до 2006 года):</label>
+      <input type="date" id="birth" name="birth">
+      <div class="error" id="errorBirth"></div>
+
+      <label for="phone">Номер телефона (11 цифр):</label>
+      <input type="tel" id="phone" name="phone">
+      <div class="error" id="errorPhone"></div>
+
+      <label for="date">Дата приёма (не ранее завтрашнего дня):</label>
+      <input type="date" id="date" name="date">
+      <div class="error" id="errorDate"></div>
+
+      <label for="time">Время приёма (8:00 - 22:00):</label>
+      <input type="time" id="time" name="time">
+      <div class="error" id="errorTime"></div>
+
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>Регистрация</p>
+    <p>Контакты: АУГСГиП@gmail.com</p>
+    <p>© 2025. Все права защищены</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
